@@ -71,7 +71,6 @@ export default {
         async getDataFromAPI() {
             const api = await fetch(`https://fakestoreapi.com/products/${this.dataIndex}`);
             const response = await api.json();
-            console.log(response);
             return response;
         },
 
